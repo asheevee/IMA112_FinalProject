@@ -17,9 +17,9 @@
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"buttons","folderPath":"folders/Objects/buttons.yy","name":"buttons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"enemies","folderPath":"folders/Objects/enemies.yy","name":"enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"tones","folderPath":"folders/Objects/tones.yy","name":"tones","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"gui","folderPath":"folders/Objects/gui.yy","name":"gui","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"labels","folderPath":"folders/Objects/labels.yy","name":"labels","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"tones","folderPath":"folders/Objects/tones.yy","name":"tones","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -35,7 +35,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"IMA112_Final",
   "resources":[
