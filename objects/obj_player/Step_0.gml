@@ -155,15 +155,21 @@ if(global.interact == 0){	/// @DnDAction : YoYo Games.Common.Variable
 	var l3CAD79EA_0 = collision_line(x + -31, y + 34, x + 31, y + 34, collision_tilemap, true, 1);if((l3CAD79EA_0)){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 2B3D9EF8
-		/// @DnDInput : 3
+		/// @DnDInput : 5
 		/// @DnDParent : 3CAD79EA
 		/// @DnDArgument : "expr_1" "true"
+		/// @DnDArgument : "expr_3" "true"
+		/// @DnDArgument : "expr_4" "true"
 		/// @DnDArgument : "var" "move_y"
 		/// @DnDArgument : "var_1" "move_isGrounded"
 		/// @DnDArgument : "var_2" "move_coyoteTime"
+		/// @DnDArgument : "var_3" "move_canDoubleJump"
+		/// @DnDArgument : "var_4" "move_canDash"
 		move_y = 0;
 		move_isGrounded = true;
 		move_coyoteTime = 0;
+		move_canDoubleJump = true;
+		move_canDash = true;
 	
 		/// @DnDAction : YoYo Games.Common.If_Expression
 		/// @DnDVersion : 1
@@ -297,6 +303,27 @@ if(global.interact == 0){	/// @DnDAction : YoYo Games.Common.Variable
 				/// @DnDArgument : "var" "collision_tile_index"
 				/// @DnDArgument : "layername" ""tileset_floor""
 				var l5F8AAB73_0 = layer_tilemap_get_id("tileset_floor");collision_tile_index = undefined;if(l5F8AAB73_0 > -1) {	var l5F8AAB73_1 = tilemap_get_at_pixel(l5F8AAB73_0, x + -32, y + 34);	if(l5F8AAB73_1 > -1) collision_tile_index = tile_get_index(l5F8AAB73_1);}}}}
+
+	/// @DnDAction : YoYo Games.Common.If_Expression
+	/// @DnDVersion : 1
+	/// @DnDHash : 338937DC
+	/// @DnDComment : if:$(13_10)not on the ground$(13_10)not in the middle of a jump$(13_10)have not already used a double jump$(13_10)have the double jump powerup$(13_10)press the jump button$(13_10)$(13_10)then: use the double jump
+	/// @DnDParent : 7D984362
+	/// @DnDArgument : "expr" "!move_isGrounded && !move_isJumping && move_canDoubleJump && global.powerupstate_jump >= 2 && control_input_jumpInit"
+	if(!move_isGrounded && !move_isJumping && move_canDoubleJump && global.powerupstate_jump >= 2 && control_input_jumpInit){	/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 2CD5C899
+		/// @DnDInput : 3
+		/// @DnDParent : 338937DC
+		/// @DnDArgument : "expr" "true"
+		/// @DnDArgument : "expr_1" "move_jumpTimer_init"
+		/// @DnDArgument : "expr_2" "false"
+		/// @DnDArgument : "var" "move_isJumping"
+		/// @DnDArgument : "var_1" "move_jumpTimer"
+		/// @DnDArgument : "var_2" "move_canDoubleJump"
+		move_isJumping = true;
+		move_jumpTimer = move_jumpTimer_init;
+		move_canDoubleJump = false;}
 
 	/// @DnDAction : YoYo Games.Collisions.If_Object_At
 	/// @DnDVersion : 1.1
