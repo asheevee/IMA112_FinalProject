@@ -143,7 +143,7 @@ if(global.interact == 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 3CAD79EA
 	/// @DnDParent : 7D984362
-	/// @DnDArgument : "x1" "-32"
+	/// @DnDArgument : "x1" "-31"
 	/// @DnDArgument : "x1_relative" "1"
 	/// @DnDArgument : "y1" "34"
 	/// @DnDArgument : "y1_relative" "1"
@@ -152,7 +152,7 @@ if(global.interact == 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDArgument : "y2" "34"
 	/// @DnDArgument : "y2_relative" "1"
 	/// @DnDArgument : "obj" "collision_tilemap"
-	var l3CAD79EA_0 = collision_line(x + -32, y + 34, x + 31, y + 34, collision_tilemap, true, 1);if((l3CAD79EA_0)){	/// @DnDAction : YoYo Games.Common.Variable
+	var l3CAD79EA_0 = collision_line(x + -31, y + 34, x + 31, y + 34, collision_tilemap, true, 1);if((l3CAD79EA_0)){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 2B3D9EF8
 		/// @DnDInput : 3
@@ -352,30 +352,6 @@ if(global.interact == 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDArgument : "object" "collision_tilemap"
 	move_and_collide(move_x, move_y, collision_tilemap,8,0,0,move_walkSpeed,48);
 
-	/// @DnDAction : YoYo Games.Collisions.If_Collision_Shape
-	/// @DnDVersion : 1.1
-	/// @DnDHash : 22BB0F8E
-	/// @DnDComment : kill vertical speed when hitting a ceiling
-	/// @DnDParent : 7D984362
-	/// @DnDArgument : "x1" "31"
-	/// @DnDArgument : "x1_relative" "1"
-	/// @DnDArgument : "y1" "-32"
-	/// @DnDArgument : "y1_relative" "1"
-	/// @DnDArgument : "x2" "-32"
-	/// @DnDArgument : "x2_relative" "1"
-	/// @DnDArgument : "y2" "-32"
-	/// @DnDArgument : "y2_relative" "1"
-	/// @DnDArgument : "obj" "collision_tilemap"
-	var l22BB0F8E_0 = collision_line(x + 31, y + -32, x + -32, y + -32, collision_tilemap, true, 1);if((l22BB0F8E_0)){	/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 244115AF
-		/// @DnDInput : 2
-		/// @DnDParent : 22BB0F8E
-		/// @DnDArgument : "var" "move_y"
-		/// @DnDArgument : "var_1" "move_jumpTimer"
-		move_y = 0;
-		move_jumpTimer = 0;}
-
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 58153010
@@ -456,4 +432,28 @@ if(global.interact == 0){	/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDVersion : 1
 			/// @DnDHash : 44034C7C
 			/// @DnDParent : 77A8FE62
-			break;}}}
+			break;}}
+
+	/// @DnDAction : YoYo Games.Collisions.If_Collision_Shape
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 22BB0F8E
+	/// @DnDComment : kill vertical speed when hitting a ceiling
+	/// @DnDParent : 7D984362
+	/// @DnDArgument : "x1" "31"
+	/// @DnDArgument : "x1_relative" "1"
+	/// @DnDArgument : "y1" "-33"
+	/// @DnDArgument : "y1_relative" "1"
+	/// @DnDArgument : "x2" "-31"
+	/// @DnDArgument : "x2_relative" "1"
+	/// @DnDArgument : "y2" "-33"
+	/// @DnDArgument : "y2_relative" "1"
+	/// @DnDArgument : "obj" "collision_tilemap"
+	var l22BB0F8E_0 = collision_line(x + 31, y + -33, x + -31, y + -33, collision_tilemap, true, 1);if((l22BB0F8E_0)){	/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 244115AF
+		/// @DnDInput : 2
+		/// @DnDParent : 22BB0F8E
+		/// @DnDArgument : "var" "move_y"
+		/// @DnDArgument : "var_1" "move_jumpTimer"
+		move_y = 0;
+		move_jumpTimer = 0;}}
