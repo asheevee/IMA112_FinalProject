@@ -1,13 +1,14 @@
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 5ED8F3FE
-/// @DnDComment : testing purposes
+/// @DnDComment : for testing purposes
 /// @DnDInput : 2
 /// @DnDArgument : "value" "2"
+/// @DnDArgument : "value_1" "2"
 /// @DnDArgument : "var" "powerupstate_jump"
 /// @DnDArgument : "var_1" "powerupstate_dash"
 global.powerupstate_jump = 2;
-global.powerupstate_dash = 0;
+global.powerupstate_dash = 2;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

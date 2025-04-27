@@ -44,7 +44,6 @@
     {"id":{"name":"obj_btn_2","path":"objects/obj_btn_2/obj_btn_2.yy",},},
     {"id":{"name":"obj_btn_parent","path":"objects/obj_btn_parent/obj_btn_parent.yy",},},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
-    {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},},
     {"id":{"name":"obj_hud_coins","path":"objects/obj_hud_coins/obj_hud_coins.yy",},},
