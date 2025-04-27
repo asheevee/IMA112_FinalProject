@@ -3,12 +3,27 @@
 /// @DnDHash : 5ED8F3FE
 /// @DnDComment : for testing purposes
 /// @DnDInput : 2
+/// @DnDDisabled : 1
 /// @DnDArgument : "value" "2"
 /// @DnDArgument : "value_1" "2"
 /// @DnDArgument : "var" "powerupstate_jump"
 /// @DnDArgument : "var_1" "powerupstate_dash"
-global.powerupstate_jump = 2;
-global.powerupstate_dash = 2;
+
+
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 62C3065B
+/// @DnDComment : save the current powerup states to revert to if the player dies
+/// @DnDInput : 3
+/// @DnDArgument : "value" "global.powerupstate_boss_speed"
+/// @DnDArgument : "value_1" "global.powerupstate_dash"
+/// @DnDArgument : "value_2" "global.powerupstate_jump"
+/// @DnDArgument : "var" "powerupstate_boss_speed_saved"
+/// @DnDArgument : "var_1" "powerupstate_dash_saved"
+/// @DnDArgument : "var_2" "powerupstate_jump_saved"
+global.powerupstate_boss_speed_saved = global.powerupstate_boss_speed;
+global.powerupstate_dash_saved = global.powerupstate_dash;
+global.powerupstate_jump_saved = global.powerupstate_jump;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

@@ -1,42 +1,3 @@
-/// @DnDAction : YoYo Games.Audio.If_Audio_Playing
-/// @DnDVersion : 1
-/// @DnDHash : 23467466
-var l23467466_0 = noone;if (audio_is_playing(l23467466_0)){	/// @DnDAction : YoYo Games.Common.Set_Global
-	/// @DnDVersion : 1
-	/// @DnDHash : 044A3001
-	/// @DnDParent : 23467466
-	/// @DnDArgument : "value" "1"
-	/// @DnDArgument : "var" "interact"
-	global.interact = 1;}
-
-/// @DnDAction : YoYo Games.Common.Else
-/// @DnDVersion : 1
-/// @DnDHash : 179F72D8
-else{	/// @DnDAction : YoYo Games.Common.If_Expression
-	/// @DnDVersion : 1
-	/// @DnDHash : 7BC15AA3
-	/// @DnDParent : 179F72D8
-	/// @DnDArgument : "expr" "move_isDashing"
-	if(move_isDashing){	/// @DnDAction : YoYo Games.Common.Set_Global
-		/// @DnDVersion : 1
-		/// @DnDHash : 0902A7AA
-		/// @DnDParent : 7BC15AA3
-		/// @DnDArgument : "value" "2"
-		/// @DnDArgument : "var" "interact"
-		global.interact = 2;}
-
-	/// @DnDAction : YoYo Games.Common.Else
-	/// @DnDVersion : 1
-	/// @DnDHash : 6DD0ED75
-	/// @DnDParent : 179F72D8
-	else{	/// @DnDAction : YoYo Games.Common.Set_Global
-		/// @DnDVersion : 1
-		/// @DnDHash : 70DC1957
-		/// @DnDComment : global.interact controls player control:$(13_10)0: player can be controlled as normal$(13_10)1: all normal player and enemy movement is halted and input disregarded$(13_10)2: same as 1, but enemy movement is *not* halted
-		/// @DnDParent : 6DD0ED75
-		/// @DnDArgument : "var" "interact"
-		global.interact = 0;}}
-
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 6A8C9E43
@@ -47,10 +8,11 @@ control_input_dash = keyboard_check_pressed(vk_lshift) || keyboard_check_pressed
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 2E7C3C7B
-/// @DnDArgument : "expr" "control_input_dash && move_canDash && global.powerupstate_dash >= 1"
-if(control_input_dash && move_canDash && global.powerupstate_dash >= 1){	/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDArgument : "expr" "control_input_dash && move_canDash && global.powerupstate_dash >= 1 && global.interact = 0"
+if(control_input_dash && move_canDash && global.powerupstate_dash >= 1 && global.interact = 0){	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDVersion : 1
 	/// @DnDHash : 5115B025
+	/// @DnDComment : global.interact controls player control:$(13_10)0: player can be controlled as normal$(13_10)1: all normal player and enemy movement is halted and input disregarded$(13_10)2: same as 1, but enemy movement is *not* halted
 	/// @DnDParent : 2E7C3C7B
 	/// @DnDArgument : "value" "2"
 	/// @DnDArgument : "var" "interact"
@@ -95,13 +57,22 @@ if(control_input_dash && move_canDash && global.powerupstate_dash >= 1){	/// @
 		/// @DnDParent : 34FBBF38
 		/// @DnDArgument : "expr" "move_blinkTimer_init"
 		/// @DnDArgument : "var" "move_dashTimer"
-		move_dashTimer = move_blinkTimer_init;}}
+		move_dashTimer = move_blinkTimer_init;
+	
+		/// @DnDAction : YoYo Games.Audio.Play_Audio
+		/// @DnDVersion : 1.1
+		/// @DnDHash : 11FC692C
+		/// @DnDParent : 34FBBF38
+		/// @DnDArgument : "soundid" "sfx_blink"
+		/// @DnDArgument : "gain" "0.5"
+		/// @DnDSaveInfo : "soundid" "sfx_blink"
+		audio_play_sound(sfx_blink, 0, 0, 0.5, undefined, 1.0);}}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 3D83B18C
-/// @DnDArgument : "expr" "move_isDashing"
-if(move_isDashing){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDArgument : "expr" "move_isDashing && global.interact = 2"
+if(move_isDashing && global.interact = 2){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 0266808F
 	/// @DnDInput : 2
@@ -257,7 +228,14 @@ if(move_isDashing){	/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDParent : 0D574332
 			/// @DnDArgument : "xsnap" "1"
 			/// @DnDArgument : "ysnap" "1"
-			move_snap(1, 1);}}
+			move_snap(1, 1);
+		
+			/// @DnDAction : YoYo Games.Common.Set_Global
+			/// @DnDVersion : 1
+			/// @DnDHash : 3B8B9E2C
+			/// @DnDParent : 0D574332
+			/// @DnDArgument : "var" "interact"
+			global.interact = 0;}}
 
 	/// @DnDAction : YoYo Games.Common.Else
 	/// @DnDVersion : 1
@@ -347,7 +325,14 @@ if(move_isDashing){	/// @DnDAction : YoYo Games.Common.Variable
 			/// @DnDParent : 03DE52EA
 			/// @DnDArgument : "xsnap" "1"
 			/// @DnDArgument : "ysnap" "1"
-			move_snap(1, 1);}}}
+			move_snap(1, 1);
+		
+			/// @DnDAction : YoYo Games.Common.Set_Global
+			/// @DnDVersion : 1
+			/// @DnDHash : 2722DB72
+			/// @DnDParent : 03DE52EA
+			/// @DnDArgument : "var" "interact"
+			global.interact = 0;}}}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
@@ -748,9 +733,25 @@ if(global.interact = 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDParent : 7A61F583
 	/// @DnDArgument : "var" "collision_tile_index"
 	/// @DnDArgument : "value" "12"
-	if(collision_tile_index == 12){	/// @DnDAction : YoYo Games.Rooms.Restart_Room
+	if(collision_tile_index == 12){	/// @DnDAction : YoYo Games.Common.Set_Global
 		/// @DnDVersion : 1
-		/// @DnDHash : 1484EF3D
+		/// @DnDHash : 1B052EE6
+		/// @DnDComment : resets powerups before restarting the room
+		/// @DnDInput : 3
+		/// @DnDParent : 58153010
+		/// @DnDArgument : "value" "global.powerupstate_boss_speed_saved"
+		/// @DnDArgument : "value_1" "global.powerupstate_dash_saved"
+		/// @DnDArgument : "value_2" "global.powerupstate_jump_saved"
+		/// @DnDArgument : "var" "powerupstate_boss_speed"
+		/// @DnDArgument : "var_1" "powerupstate_dash"
+		/// @DnDArgument : "var_2" "powerupstate_jump"
+		global.powerupstate_boss_speed = global.powerupstate_boss_speed_saved;
+		global.powerupstate_dash = global.powerupstate_dash_saved;
+		global.powerupstate_jump = global.powerupstate_jump_saved;
+	
+		/// @DnDAction : YoYo Games.Rooms.Restart_Room
+		/// @DnDVersion : 1
+		/// @DnDHash : 0865224A
 		/// @DnDParent : 58153010
 		room_restart();}
 

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_collect_tone_C",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.283628,
+  "name":"sfx_collect_tone_C",
+  "parent":{
+    "name":"tone collect",
+    "path":"folders/Sounds/tone collect.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_collect_tone_C.wav",
+  "type":0,
+  "volume":1.0,
+}
