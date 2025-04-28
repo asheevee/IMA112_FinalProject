@@ -1,5 +1,5 @@
 {
-  "$GMTileSet":"v1",
+  "$GMTileSet":"",
   "%Name":"tileset_floor",
   "autoTileSets":[],
   "macroPageTiles":{
@@ -18,13 +18,17 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_tiles",
-    "path":"sprites/spr_tiles/spr_tiles.yy",
+    "name":"spr_tiles_new",
+    "path":"sprites/spr_tiles_new/spr_tiles_new.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
     "path":"texturegroups/Default",
+  },
+  "tileAnimation":{
+    "FrameData":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,],
+    "SerialiseFrameCount":1,
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
