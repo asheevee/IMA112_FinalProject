@@ -5,7 +5,8 @@
   "managed":true,
   "name":"obj_tone_B",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_sound","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resource":{"name":"sfx_collect_tone_A","path":"sounds/sfx_collect_tone_A/sfx_collect_tone_A.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_collect_tone_B",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_sound","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resource":{"name":"sfx_collect_tone_B","path":"sounds/sfx_collect_tone_B/sfx_collect_tone_B.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_collect_tone_B",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_color","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF9932FF",},
   ],
   "parent":{
     "name":"tones",

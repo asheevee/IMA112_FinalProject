@@ -7,6 +7,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_type","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_sound","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resource":{"name":"sfx_collect_tone_A","path":"sounds/sfx_collect_tone_A/sfx_collect_tone_A.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_collect_tone_A",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_color","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF3299FF",},
   ],
   "parent":{
     "name":"tones",
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tone",
-    "path":"sprites/spr_tone/spr_tone.yy",
+    "name":"spr_tone_jump",
+    "path":"sprites/spr_tone_jump/spr_tone_jump.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -15,10 +15,10 @@ coins += 1;
 /// @DnDAction : YoYo Games.Audio.Play_Audio
 /// @DnDVersion : 1.1
 /// @DnDHash : 594C88EE
-/// @DnDDisabled : 1
 /// @DnDArgument : "soundid" "sfx_coin"
-/// @DnDArgument : "gain" "0.1"
-
+/// @DnDArgument : "gain" "1"
+/// @DnDSaveInfo : "soundid" "sfx_coin"
+audio_play_sound(sfx_coin, 0, 0, 1, undefined, 1.0);
 
 /// @DnDAction : YoYo Games.Particles.Effect
 /// @DnDVersion : 1

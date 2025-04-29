@@ -6,6 +6,7 @@
   "name":"obj_tone_C",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_sound","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resource":{"name":"sfx_collect_tone_C","path":"sounds/sfx_collect_tone_C/sfx_collect_tone_C.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_collect_tone_C",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"propertyId":{"name":"tone_color","path":"objects/obj_tone_parent/obj_tone_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FFFF32FF",},
   ],
   "parent":{
     "name":"tones",
