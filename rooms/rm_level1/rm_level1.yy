@@ -268,7 +268,7 @@
           7,0,0,-3,-2147483648,2,0,5,-17,6,1,7,-5,-2147483648,1,5,-43,6,3,7,0,0,-3,-2147483648,2,0,5,-17,6,1,7,
           -5,-2147483648,1,5,-43,6,3,7,0,0,-3,-2147483648,2,0,5,-17,6,1,7,-5,12,1,5,-43,6,1,7,-6,12,3,5,6,6,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tileset_floor","path":"tilesets/tileset_floor/tileset_floor.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":"_filter_linear_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4293256677,"depth":200,"effectEnabled":true,"effectType":"_filter_linear_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
         {"name":"g_LinearBlurVector","type":0,"value":"0",},
         {"name":"g_LinearBlurVector","type":0,"value":"3",},
         {"name":"g_NoiseTexture","type":2,"value":"_filter_linear_blur_noise",},

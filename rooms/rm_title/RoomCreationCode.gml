@@ -21,6 +21,6 @@ global.powerupstate_boss_speed_saved = 0;
 /// @DnDVersion : 1
 /// @DnDHash : 32049CF0
 /// @DnDComment : quick access for testing purposes
-/// @DnDArgument : "room" "rm_level1"
-/// @DnDSaveInfo : "room" "rm_level1"
-room_goto(rm_level1);
+/// @DnDDisabled : 1
+/// @DnDArgument : "room" "rm_level3"
+/// @DnDSaveInfo : "room" "rm_level3"

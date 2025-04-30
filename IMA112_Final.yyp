@@ -71,6 +71,7 @@
     {"id":{"name":"obj_tone_parent","path":"objects/obj_tone_parent/obj_tone_parent.yy",},},
     {"id":{"name":"rm_level1","path":"rooms/rm_level1/rm_level1.yy",},},
     {"id":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
+    {"id":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
     {"id":{"name":"rm_story","path":"rooms/rm_story/rm_story.yy",},},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"id":{"name":"mus_main_theme","path":"sounds/mus_main_theme/mus_main_theme.yy",},},
@@ -123,6 +124,7 @@
     {"roomId":{"name":"rm_story","path":"rooms/rm_story/rm_story.yy",},},
     {"roomId":{"name":"rm_level1","path":"rooms/rm_level1/rm_level1.yy",},},
     {"roomId":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
+    {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
