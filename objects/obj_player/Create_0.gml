@@ -1,3 +1,12 @@
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1.1
+/// @DnDHash : 0773632C
+/// @DnDArgument : "soundid" "mus_main_theme"
+/// @DnDArgument : "loop" "1"
+/// @DnDArgument : "gain" "0.5"
+/// @DnDSaveInfo : "soundid" "mus_main_theme"
+audio_play_sound(mus_main_theme, 0, 1, 0.5, undefined, 1.0);
+
 /// @DnDAction : YoYo Games.Common.Set_Global
 /// @DnDVersion : 1
 /// @DnDHash : 5ED8F3FE

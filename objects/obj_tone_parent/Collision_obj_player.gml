@@ -76,6 +76,14 @@ if(!(global.interact == 1)){	/// @DnDAction : YoYo Games.Common.Set_Global
 			/// @DnDArgument : "var" "powerupstate_boss_speed"
 			global.powerupstate_boss_speed += 1;	break;}
 
+	/// @DnDAction : YoYo Games.Audio.Pause_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 66D3C22E
+	/// @DnDParent : 5FCD5B3D
+	/// @DnDArgument : "sound" "mus_main_theme"
+	/// @DnDSaveInfo : "sound" "mus_main_theme"
+	audio_pause_sound(mus_main_theme);
+
 	/// @DnDAction : YoYo Games.Audio.Audio_Get_Length
 	/// @DnDVersion : 1
 	/// @DnDHash : 23889D83
@@ -84,18 +92,6 @@ if(!(global.interact == 1)){	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDArgument : "var_temp" "1"
 	/// @DnDArgument : "sound" "tone_sound"
 	var _len = audio_sound_length(tone_sound);
-
-	/// @DnDAction : YoYo Games.Audio.Play_Audio
-	/// @DnDVersion : 1.1
-	/// @DnDHash : 2A1D2C62
-	/// @DnDComment : so apparently this doesn't work the way i wanted it to$(13_10)and i do indeed need 12 different audio files
-	/// @DnDDisabled : 1
-	/// @DnDParent : 5FCD5B3D
-	/// @DnDArgument : "soundid" "sfx_collect_tone_A"
-	/// @DnDArgument : "gain" "0.5"
-	/// @DnDArgument : "pitch" "2 ^ (tone_note / 12)"
-	/// @DnDSaveInfo : "soundid" "sfx_collect_tone_A"
-
 
 	/// @DnDAction : YoYo Games.Audio.Play_Audio
 	/// @DnDVersion : 1.1

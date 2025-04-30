@@ -28,6 +28,12 @@ if(!(global.interact == 1)){	/// @DnDAction : YoYo Games.Common.Set_Global
 	global.powerupstate_dash = global.powerupstate_dash_saved;
 	global.powerupstate_jump = global.powerupstate_jump_saved;
 
+	/// @DnDAction : YoYo Games.Audio.Stop_All_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 1D1DA1F4
+	/// @DnDParent : 5952EE90
+	audio_stop_all();
+
 	/// @DnDAction : YoYo Games.Audio.Audio_Get_Length
 	/// @DnDVersion : 1
 	/// @DnDHash : 138939B1
@@ -101,6 +107,6 @@ if(!(global.interact == 1)){	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDHash : 5F0D4E46
 	/// @DnDComment : when alarm goes off: restart the room
 	/// @DnDParent : 5952EE90
-	/// @DnDArgument : "steps" "round(_len * 60)"
+	/// @DnDArgument : "steps" "round(_len * 60) + 40"
 	/// @DnDArgument : "alarm" "3"
-	alarm_set(3, round(_len * 60));}
+	alarm_set(3, round(_len * 60) + 40);}
