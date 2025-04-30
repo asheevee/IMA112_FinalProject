@@ -33,6 +33,12 @@ while(true){	/// @DnDAction : YoYo Games.Audio.If_Audio_Playing
 		/// @DnDParent : 328C1234
 		break;}}
 
+/// @DnDAction : YoYo Games.Common.Set_Global
+/// @DnDVersion : 1
+/// @DnDHash : 7F27CE87
+/// @DnDArgument : "var" "interact"
+global.interact = 0;
+
 /// @DnDAction : YoYo Games.Rooms.Next_Room
 /// @DnDVersion : 1
 /// @DnDHash : 3EFB9FA2

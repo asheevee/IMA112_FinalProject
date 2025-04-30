@@ -583,8 +583,8 @@ if(global.interact = 0){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDArgument : "x_relative" "1"
 		/// @DnDArgument : "y" "bbox_bottom"
 		/// @DnDArgument : "type" "2"
-		/// @DnDArgument : "color" "$FFC4C4C4"
-		effect_create_below(2, x + 0, bbox_bottom, 0, $FFC4C4C4 & $ffffff);
+		/// @DnDArgument : "color" "$FFFFFFFF"
+		effect_create_below(2, x + 0, bbox_bottom, 0, $FFFFFFFF & $ffffff);
 	
 		/// @DnDAction : YoYo Games.Audio.Play_Audio
 		/// @DnDVersion : 1.1
@@ -764,8 +764,8 @@ if(global.interact = 0){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDArgument : "y_relative" "1"
 		/// @DnDArgument : "where" "1"
 		/// @DnDArgument : "size" "2"
-		/// @DnDArgument : "color" "$66666666"
-		effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $66666666 & $ffffff);
+		/// @DnDArgument : "color" "$FF666666"
+		effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $FF666666 & $ffffff);
 	
 		/// @DnDAction : YoYo Games.Particles.Effect
 		/// @DnDVersion : 1
@@ -777,21 +777,8 @@ if(global.interact = 0){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDArgument : "y_relative" "1"
 		/// @DnDArgument : "where" "1"
 		/// @DnDArgument : "size" "2"
-		/// @DnDArgument : "color" "$6600A7FF"
-		effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $6600A7FF & $ffffff);
-	
-		/// @DnDAction : YoYo Games.Particles.Effect
-		/// @DnDVersion : 1
-		/// @DnDHash : 621CF735
-		/// @DnDParent : 58153010
-		/// @DnDArgument : "x" "random_range(-16,16)"
-		/// @DnDArgument : "x_relative" "1"
-		/// @DnDArgument : "y" "random_range(-16,16)"
-		/// @DnDArgument : "y_relative" "1"
-		/// @DnDArgument : "where" "1"
-		/// @DnDArgument : "size" "2"
-		/// @DnDArgument : "color" "$FF0052FF"
-		effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $FF0052FF & $ffffff);
+		/// @DnDArgument : "color" "$FF00A7FF"
+		effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $FF00A7FF & $ffffff);
 	
 		/// @DnDAction : YoYo Games.Instances.Set_Alarm
 		/// @DnDVersion : 1

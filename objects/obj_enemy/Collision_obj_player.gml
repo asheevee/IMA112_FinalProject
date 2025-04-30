@@ -64,8 +64,8 @@ if(!(global.interact == 1)){	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "where" "1"
 	/// @DnDArgument : "size" "2"
-	/// @DnDArgument : "color" "$66666666"
-	with(other) effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $66666666 & $ffffff);
+	/// @DnDArgument : "color" "$FF666666"
+	with(other) effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $FF666666 & $ffffff);
 
 	/// @DnDAction : YoYo Games.Particles.Effect
 	/// @DnDVersion : 1
@@ -78,22 +78,8 @@ if(!(global.interact == 1)){	/// @DnDAction : YoYo Games.Common.Set_Global
 	/// @DnDArgument : "y_relative" "1"
 	/// @DnDArgument : "where" "1"
 	/// @DnDArgument : "size" "2"
-	/// @DnDArgument : "color" "$6600A7FF"
-	with(other) effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $6600A7FF & $ffffff);
-
-	/// @DnDAction : YoYo Games.Particles.Effect
-	/// @DnDVersion : 1
-	/// @DnDHash : 5DA65289
-	/// @DnDApplyTo : other
-	/// @DnDParent : 5952EE90
-	/// @DnDArgument : "x" "random_range(-16,16)"
-	/// @DnDArgument : "x_relative" "1"
-	/// @DnDArgument : "y" "random_range(-16,16)"
-	/// @DnDArgument : "y_relative" "1"
-	/// @DnDArgument : "where" "1"
-	/// @DnDArgument : "size" "2"
-	/// @DnDArgument : "color" "$FF0052FF"
-	with(other) effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $FF0052FF & $ffffff);
+	/// @DnDArgument : "color" "$FF00A7FF"
+	with(other) effect_create_above(0, x + random_range(-16,16), y + random_range(-16,16), 2, $FF00A7FF & $ffffff);
 
 	/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 	/// @DnDVersion : 1

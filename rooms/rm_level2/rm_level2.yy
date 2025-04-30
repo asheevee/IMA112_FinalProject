@@ -449,11 +449,11 @@
           1,5,-31,6,1,7,-21,-2147483648,1,5,-33,6,1,7,-23,-2147483648,1,5,-47,6,1,7,-27,-2147483648,1,5,-31,6,
           1,7,-21,-2147483648,1,5,-33,6,1,7,-23,12,1,5,-47,6,1,7,-27,12,1,5,-31,6,1,7,-21,12,1,5,-10,6,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tileset_floor","path":"tilesets/tileset_floor/tileset_floor.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":"_effect_gaussian_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
-        {"name":"g_numDownsamples","type":0,"value":"2",},
-        {"name":"g_numPasses","type":0,"value":"2",},
-        {"name":"g_intensity","type":0,"value":"0.35",},
-      ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_bg_b","path":"sprites/spr_bg_b/spr_bg_b.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":"_filter_linear_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
+        {"name":"g_LinearBlurVector","type":0,"value":"0",},
+        {"name":"g_LinearBlurVector","type":0,"value":"3",},
+        {"name":"g_NoiseTexture","type":2,"value":"_filter_linear_blur_noise",},
+      ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_bg_b","path":"sprites/spr_bg_b/spr_bg_b.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"rm_level2",
   "parent":{
